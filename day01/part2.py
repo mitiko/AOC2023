@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 
-# input = open("sample.txt").readlines()
-input = open("input.txt").readlines()
+read_sample = 0
+filename = ["input.txt", "sample.txt"][read_sample]
+lines = open(filename).readlines()
+
 import re
 ss = re.compile("(one|two|three|four|five|six|seven|eight|nine|\d)")
 ssr = re.compile("(eno|owt|eerht|ruof|evif|xis|neves|thgie|enin|\d)")
@@ -50,7 +52,7 @@ ddmr = {
 }
 
 s = 0
-for line in input:
+for line in lines:
     mm = re.findall(ss,line)
     mmr = re.findall(ssr,line[::-1])
     d1 = ddm[mm[0]]

@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 
-input = open("input.txt").readlines()
+read_sample = 0
+filename = ["input.txt", "sample.txt"][read_sample]
+lines = open(filename).readlines()
 
 s = 0
-for line in input:
+for line in lines:
     d1 = 0
     for ch in line:
         if ch in ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']:

@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 
 import re
-input = open("input.txt").readlines()
+
+read_sample = 0
+filename = ["input.txt", "sample.txt"][read_sample]
+lines = open(filename).readlines()
 
 d1 = {
     "one": 1,

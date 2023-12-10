@@ -1,4 +1,6 @@
 [lint]
-ignore = ['E701']
+# Allow conditional one-liners, and imports not at top of file
+ignore = ['E701', 'E402']
+
 # Allow unused variables when underscore-prefixed.
 dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
